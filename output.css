@@ -956,6 +956,14 @@ video {
   min-width: 200px;
 }
 
+.max-w-28{
+  max-width: 7rem;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .max-w-\[120px\]{
   max-width: 120px;
 }
@@ -966,6 +974,10 @@ video {
 
 .max-w-\[580px\]{
   max-width: 580px;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .flex-shrink{
@@ -1025,6 +1037,11 @@ video {
 
 .rotate-\[250deg\]{
   --tw-rotate: 250deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[270deg\]{
+  --tw-rotate: 270deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1343,6 +1360,10 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -2472,6 +2493,11 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .text-red-950{
   --tw-text-opacity: 1;
   color: rgb(69 10 10 / var(--tw-text-opacity));
@@ -2984,10 +3010,6 @@ video {
 
   .md\:max-w-\[500px\]{
     max-width: 500px;
-  }
-
-  .md\:max-w-\[700px\]{
-    max-width: 700px;
   }
 
   .md\:max-w-\[800px\]{
