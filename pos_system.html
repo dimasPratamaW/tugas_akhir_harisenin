@@ -1,57 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POS SYSTEM</title>
-    <link rel="stylesheet" href="./output.css">
-    
-  </head>
-  <body >
 
-    <!--CONTAINER-->
-    <div class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POS SYSTEM</title>
+  <link rel="stylesheet" href="./output.css">
 
-      <!--TOP-->
-      <div class="flex bg-[#724b68] h-9 items-center font-serif text-white gap-3">
-        <!--LOGO-->
-        <div class="grow">
-          <p class=" pl-5 font-bold text-lg">odoo</p>
-        </div>
+</head>
 
-        <!--FOTO PROFIL-->
-        <div class="">
-          <div>
-            <img class="h-7" src="./icon/profil.png" alt="">
-          </div>
-          
-        </div>
-        <!--USERNAME-->
-        <div class="-ml-2">   
-          <p>Harisenin Group7</p>
-        </div>
-        <!--PING-->
-        <div class="mr-5"> <img class="h-7" src="./icon/wifi-svgrepo-com.svg " alt="">  </div>
+<body>
 
-        <!--MENU EXIT-->
-        <div class="flex items-center gap-2 mr-3">
-          <a  href="#"><img class="h-7" src="icon/15480364.png" alt=""></a>
-          <a href="#">Exit</a>
+  <!--CONTAINER-->
+  <div class="font-serif">
+
+    <!--TOP-->
+    <div class="flex h-9 items-center font-serif gap-3">
+      <!--LOGO-->
+      <div class="grow">
+        <p class=" pl-5 font-bold text-lg text-[#878787]"><span class="text-[#724b68] text-2xl">o</span><span
+            class="text-2xl">doo</span></p>
+      </div>
+
+      <!--FOTO PROFIL-->
+      <div class="">
+        <div>
+          <img class="h-7" src="./icon/profil.png" alt="">
         </div>
 
       </div>
-      <div class="flex flex-col">
+      <!--USERNAME-->
+      <div class="-ml-2 text-[#3d444e]">
+        <p>Harisenin Group7</p>
+      </div>
+      <!--PING-->
+      <div class="mr-5"> <img class="h-7" src="./icon/ping.svg " alt=""> </div>
+
+      <!--MENU EXIT-->
+      <div class="flex items-center gap-2 mr-3 text-[#3d444e]   ">
+        <a href="#"><img class="h-7" src="icon/exit.png" alt=""></a>
+        <a href="#">Exit</a>
+      </div>
+
+    </div>
+    <hr>
+    <div class="flex flex-row font-serif">
       <!--LEFT-->
-      <div class="bg-stone-600 w-1/3 h-lvh">
+      <div class="bg-stone-600 w-2/5 h-lvh">
 
         <!--ORDER LIST-->
         <div class="bg-[('icon\image_processing20220410-10191-7uqeo6.jpg')]"></div>
-        
-        
+
+
       </div>
       <!--RIGHT-->
-      <div></div>
+      <div class="w-3/5 flex-col text-[#3d444e] ">
+        <!--RIGHT(NAVIGATION)-->
+        <div class="flex  items-center h-9 px-1">
+          <!--HOME TO DESK-->
+          <div class="h-9 me-auto">
+            <div class="flex items-center gap-3">
+              <a href="#"><img class="h-9" src="icon/home.png" alt=""></a>
+              <p class="">></p>
+              <div class="flex items-center gap-2">
+                <a href="#"><img class="h-7" src="icon/desk.png" alt=""></a>
+                <p>Desk</p>
+              </div>
+
+            </div>
+          </div>
+          <!--SEARCH PRODUCT-->
+          <div class="flex ">
+            <input class="border border-2 rounded-lg " type="search" placeholder="          Search Product" name=""
+              id="">
+          </div>
+
+        </div>
+        <!--LIST PRODUCT-->
+        <div class="bg-[#d9dade] h-full p-2 flex flex-col gap-2">
+          <!--LAYER 1-->
+          <div class="flex gap-2 ">
+
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+
+
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+          </div>
+          <!--LAYER 2-->
+          <div class="flex gap-2 ">
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+
+
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="icon/Product.webp" alt="">
+              <p>Lorem ipsum dolor</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </body>
+  </div>
+  </div>
+</body>
+
 </html>
