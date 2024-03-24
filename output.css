@@ -755,9 +755,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
+
+.mr-8{
+  margin-right: 2rem;
+
 
 .mt-2{
   margin-top: 0.5rem;
@@ -939,6 +940,10 @@ video {
   width: 20px;
 }
 
+.w-\[20rem\]{
+  width: 20rem;
+}
+
 .w-\[300px\]{
   width: 300px;
 }
@@ -972,12 +977,30 @@ video {
   min-width: 200px;
 }
 
+
+.max-w-28{
+  max-width: 7rem;
+ }
+  
 .max-w-3xl{
   max-width: 48rem;
+
 }
 
 .max-w-\[120px\]{
   max-width: 120px;
+}
+
+.max-w-\[31\.25rem\]{
+  max-width: 31.25rem;
+}
+
+.max-w-\[36\.25rem\]{
+  max-width: 36.25rem;
+}
+
+.max-w-\[40rem\]{
+  max-width: 40rem;
 }
 
 .max-w-\[500px\]{
@@ -986,6 +1009,10 @@ video {
 
 .max-w-\[580px\]{
   max-width: 580px;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .flex-shrink{
@@ -1045,6 +1072,11 @@ video {
 
 .rotate-\[250deg\]{
   --tw-rotate: 250deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[270deg\]{
+  --tw-rotate: 270deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1363,6 +1395,14 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-4{
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -2533,6 +2573,11 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .text-red-950{
   --tw-text-opacity: 1;
   color: rgb(69 10 10 / var(--tw-text-opacity));
@@ -3053,6 +3098,10 @@ video {
     width: auto;
   }
 
+  .md\:w-full{
+    width: 100%;
+  }
+
   .md\:w-max{
     width: -moz-max-content;
     width: max-content;
@@ -3061,6 +3110,12 @@ video {
   .md\:max-w-\[500px\]{
     max-width: 500px;
   }
+
+
+  .md\:max-w-\[56\.25rem\]{
+    max-width: 56.25rem;
+  }
+
 
   .md\:max-w-\[800px\]{
     max-width: 800px;
@@ -3096,6 +3151,10 @@ video {
 
   .md\:gap-10{
     gap: 2.5rem;
+  }
+
+  .md\:gap-3{
+    gap: 0.75rem;
   }
 
   .md\:rounded-t-\[35\%\]{
