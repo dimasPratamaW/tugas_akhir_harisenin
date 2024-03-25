@@ -37,14 +37,18 @@ logoHover.forEach((e) => {
   });
 });
 
-const toggleButton = document.getElementById("toggleButton");
-const content = document.getElementById("content");
+function toggleContent(buttonId, contentId) {
+  const button = document.getElementById(buttonId);
+  const content = document.getElementById(contentId);
 
-// Add click event listener to the link
-toggleButton.addEventListener("click", function (event) {
-  // Prevent default link behavior
-  event.preventDefault();
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    content.classList.toggle("hidden");
+  });
+}
 
-  // Toggle the visibility of the content div
-  content.classList.toggle("hidden");
-});
+toggleContent("toggleButton1", "content1");
+toggleContent("toggleButton2", "content2");
+toggleContent("toggleButton3", "content3");
+toggleContent("toggleButton4", "content4");
+toggleContent("toggleButton5", "content5");
