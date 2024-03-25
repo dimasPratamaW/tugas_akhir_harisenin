@@ -36,3 +36,15 @@ logoHover.forEach((e) => {
     e.classList.remove("text-gray-200");
   });
 });
+
+const toggleButton = document.getElementById("toggleButton");
+const content = document.getElementById("content");
+
+// Add click event listener to the link
+toggleButton.addEventListener("click", function (event) {
+  // Prevent default link behavior
+  event.preventDefault();
+
+  // Toggle the visibility of the content div
+  content.classList.toggle("hidden");
+});

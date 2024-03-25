@@ -1,1 +1,252 @@
-// FAQ Page
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Style css -->
+    <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="font-body font-normal">
+    <!-- Navbar -->
+    <header class="fixed py-2 top-0 left-0 w-full h-[80px] z-10 m-auto shadow-sm bg-gray-50">
+        <div class="container w-full relative flex justify-between items-center h-full px-4 mx-auto">
+            <a href="#">
+                <img src="assets/images/logo.png" alt="logo" width="80" height="50" loading="lazy"
+                    class="h-auto max-w-[120px] w-full" />
+            </a>
+            <nav class="absolute hidden bg-gray-200 md:block md:static md:top-0 md:w-max md:mt-0 left-0 w-full md:bg-transparent md:z-auto top-[90%] transition-all ease-in duration-500"
+                data-navbar>
+                <ul class="h-full px-8 flex flex-col md:flex-row md:px-0 md:items-center md:w-auto">
+                    <li class="my-5 md:my-0">
+                        <a href="./index.html" class="font-semibold after:">Home</a>
+                    </li>
+                    <li class="my-5 md:mx-5">
+                        <a href="" target="_blank" class="font-semibold">FAQ</a>
+                    </li>
+                    <li class="pt-10 pb-6 border-t-[1px] md:pb-0 md:pt-0 md:border-t-0 solid border-gray-700 w-[100px]">
+                        <a class="px-5 bg-white py-3 rounded-xl font-semibold shadow-xl" href="./Sign_In.html"
+                            target="_blank">
+                            Sign In</a>
+                    </li>
+                </ul>
+            </nav>
+            <button
+                class="grid place-items-center h-10 w-10 bg-gray-200 shadow-xl rounded-lg hover:bg-gray-100 md:hidden">
+                <ion-icon name="menu" onclick="handleToggler(this)" class="text-xl"></ion-icon>
+            </button>
+        </div>
+    </header>
+    <!-- Main section -->
+    <main class="mt-20 my-5 mb-10 md:mt-32">
+        <div class=" bg-[#65435c]">
+            <div class="min-h-8 flex justify-center align-middle">
+                <h1 class="text-4xl font-bold text-center">POS FAQ</h1>
+            </div>
+        </div>
+        <div class="grid gap-2 justify-center align-middle">
+            <div class="mr-8 max-w-3xl border-2 pl-3 rounded-lg bg-slate-300">
+                <a id="toggleButton1">
+                    Printer label mana saja yang dapat secara langsung digunakan oleh ODOO PoS?
+                </a>
+                <div id="content1" class="hidden">
+                    <p>
+                        Kami mendukung semua label printer Zebra (Zebra ZD410, Zebra ZD420, dsb.) yang berdasarkan
+                        protokol
+                        ZPL. Pencetakan aka nsecara otomatis dilakukan.
+                        Label printer USB lainya akan dideteksi oleh sistem kami tapi beberapa modifikasi pada laporan
+                        templat akan diperlukan agar bisa kompatibel dengan format kertas printer. Pencetakan akan
+                        secara
+                        manual diluncurkan melalui halaman pencetakan browser.
+                        Catatan: IoT box diperlukan untuk printer label
+                    </p>
+                </div>
+            </div>
+
+            <div class="mr-8 max-w-3xl border-2 pl-3 rounded-lg">
+                <a id="toggleButton2">
+                    Apakah saya masih dapat mencetak walaupun sistem saya offline? </a>
+                <div id="content2" class="hidden">
+                    <p>
+                        Anda dapat mencetak selama PoS dan printer Anda terhubung pada jaringan lokal yang sama
+                        (wifi/ethernet).
+                    </p>
+                </div>
+            </div>
+
+            <div class="mr-8 max-w-3xl border-2 pl-3 rounded-lg">
+                <a id="toggleButton3">
+                    Apakah saya butuh satu IoT Box untuk setiap PoS?
+                </a>
+                <div id="content3" class="hidden">
+                    <p>
+                        Semenjak Odoo PoS v13, Anda tidak lagi membutuhkan IoT Box untuk setiap PoS yang tersedia karena
+                        Anda
+                        dapat memilih secara manual hardware yang akan digunakan untuk lebih dari satu PoS melalui menu
+                        dropdown
+                        pada menu setup IoT (terdapat beberapa pengecualian seperti terminal pembayaran Ingenico)
+                    </p>
+                </div>
+            </div>
+
+            <div class="mr-8 max-w-3xl border-2 pl-3 rounded-lg">
+                <a id="toggleButton4">
+                    Apakah saya dapat menggunakan lebih dari satu terminal pembayaran elektronik (TPE) pada satu PoS?
+                </a>
+                <div id="content4" class="hidden">
+                    <p>
+                        Beberapa kombinasi TPE dapat dilakukan menggunakan hanya satu POS Odoo
+                        <br>
+                        <br>
+                        Adyen-Adyen
+                        <br>
+                        Adyen-Ingenico
+                        <br>
+                        Adyen-Six
+                        <br>
+                        Ingenico-Ingenico
+                        <br>
+                        Ingenico-Six
+                        <br>
+                        <br>
+                        Lebih lagi, terminal pembayaran Adyen atau Ingenico yang sama dapat digunakan dengan PoS
+                        lainnya.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mr-8 max-w-3xl border-2 pl-3 rounded-lg">
+                <a id="toggleButton5">
+                    Apakah saya dapat menggunakan 2 layar tambahan untuk Odoo PoS saya dengan IoT Box?
+                </a>
+                <div id="content5" class="hidden">
+                    <p>
+                        Semenjak 2020, IoT Box (yang didasarkan dari Raspberry 4) memiliki 2 colokan HDMI yang
+                        memungkinkan Anda
+                        untuk menghubungkan 2 layar di atas layar kasir (misalnya satu tampilan pelanggan dan satu
+                        tampilan
+                        promosi)
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- footer -->
+    <footer class="w-full h-full bg-gray-900">
+        <!-- footer atas -->
+        <div class="container max-w-[500px] md:max-w-full px-10 py-10 text-gray-400 mx-auto">
+            <a href="/" class="flex justify-center pb-10">
+                <img src="./assets/images/logo.png" alt="logo" width="80" height="50"
+                    class="h-auto max-w-[120px] object-cover w-full" />
+            </a>
+            <div
+                class="w-full flex gap-10 py-8 flex-wrap md:flex-nowrap justify-between md:justify-between items-start">
+                <div class="flex md:flex-col justify-between w-full md:w-max">
+                    <div class="pb-4">
+                        <span class="text-2xl font-medium text-gray-300 pb-2">Komunitas</span>
+                        <ul class="grid gap-2" data-list-footer>
+                            <li>
+                                <a href="#">Tutorial-tutorial</a>
+                            </li>
+                            <li>
+                                <a href="#">Dokumentasi</a>
+                            </li>
+                            <li>
+                                <a href="#">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <span class="text-2xl font-medium text-gray-300">Open Source</span>
+                        <ul class="grid gap-2" data-list-footer>
+                            <li>
+                                <a href="#">Download</a>
+                            </li>
+                            <li>
+                                <a href="#">Github</a>
+                            </li>
+                            <li>
+                                <a href="#">Runbot</a>
+                            </li>
+                            <li>
+                                <a href="#">Terjemahan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid">
+                    <span class="text-2xl font-medium text-gray-300">Layanan</span>
+                    <p class="hover:text-gray-200 cursor-pointer">Odoo.sh Hosting</p>
+                    <ul class="grid gap-1" data-list-footer>
+                        <li class="pt-2">
+                            <a href="#">bantuan</a>
+                        </li>
+                        <li>
+                            <a href="#">peningkatan</a>
+                        </li>
+                        <li>
+                            <a href="#">Forum</a>
+                        </li>
+                        <li>
+                            <a href="#">Costum Development</a>
+                        </li>
+                        <li>
+                            <a href="#">Pendidikan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid">
+                    <span class="text-2xl font-medium text-gray-300">Tentang Kami</span>
+                    <ul class="grid gap-2" data-list-footer>
+                        <li>
+                            <a href="#">Perusahaan kami</a>
+                        </li>
+                        <li>
+                            <a href="#">Aset Merek</a>
+                        </li>
+                        <li>
+                            <a href="#">Hubungi kami</a>
+                        </li>
+                        <li>
+                            <a href="#">Tugas</a>
+                        </li>
+                        <p>Hukum • Privasi <br />Keamanan</p>
+                    </ul>
+                </div>
+                <div class="grid w-full md:max-w-[500px]">
+                    <div class="flex gap-2 pb-10 border-b-[1px] w-full border-gray-600">
+                        <img src="./assets/images/bendera.png" alt="indonesia" width="20" height="10"
+                            class="rounded-full object-cover h-auto" />
+                        <span>bahasa Indonesia</span>
+                    </div>
+                    <p class="pt-8">Odoo adalah rangkaian Aplikasi bisnis open source yang mencakup semua kebutuhan
+                        perusahaan
+                        Anda : CRM, eCommerce, akutansi, iventaris, point of sale, manajement project, dan seterus.</p>
+                    <span class="pt-3">Mudah di gunakan dan terintegrasi penuh pada saat yang sama adalah value
+                        proposition unik
+                        Odoo.</span>
+                    <div class="flex gap-5 text-2xl pt-6 cursor-pointer" data-logo>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer bawah -->
+        <div class="w-full bg-black">
+            <p class="flex justify-center py-5 text-gray-400">Website made with <span class="text-gray-200 px-2"> group
+                    7</span></p>
+        </div>
+    </footer>
+    <!-- link icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="assets/js/layout.js"></script>
+
+</html>
