@@ -36,3 +36,19 @@ logoHover.forEach((e) => {
     e.classList.remove("text-gray-200");
   });
 });
+
+function toggleContent(buttonId, contentId) {
+  const button = document.getElementById(buttonId);
+  const content = document.getElementById(contentId);
+
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    content.classList.toggle("hidden");
+  });
+}
+
+toggleContent("toggleButton1", "content1");
+toggleContent("toggleButton2", "content2");
+toggleContent("toggleButton3", "content3");
+toggleContent("toggleButton4", "content4");
+toggleContent("toggleButton5", "content5");

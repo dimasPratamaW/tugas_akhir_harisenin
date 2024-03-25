@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POS SYSTEM</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+  <!--CONTAINER-->
+  <div class="font-serif">
+
+    <!--TOP-->
+    <div class="flex h-9 items-center font-serif gap-3">
+      <!--LOGO-->
+      <div class="grow">
+        <p class=" pl-5 font-bold text-lg text-[#878787]"><span class="text-[#724b68] text-2xl">o</span><span
+            class="text-2xl">doo</span></p>
+      </div>
+
+      <!--FOTO PROFIL-->
+      <div class="">
+        <div>
+          <img class="h-7" src="./icon/profil.png" alt="">
+        </div>
+
+      </div>
+      <!--USERNAME-->
+      <div class="-ml-2 text-[#3d444e]">
+        <p>Harisenin Group7</p>
+      </div>
+      <!--PING-->
+      <div class="mr-5"> <img class="h-7" src="./icon/ping.svg " alt=""> </div>
+
+      <!--MENU EXIT-->
+      <div class="flex items-center gap-2 mr-3 text-[#3d444e]   ">
+        <a href="#"><img class="h-7" src="icon/exit.png" alt=""></a>
+        <a href="#">Exit</a>
+      </div>
+
+    </div>
+    <hr>
+    <div class="flex flex-row font-serif">
+
+      <!--LEFT Content Start-->
+      <div class="bg-stone-600 w-2/5 h-lvh block">
+        <div class="flex flex-col h-screen">
+          <!-- content top -->
+          <div class="flex-grow flex-row">
+            <div class="bg-white h-full flex items-center justify-center">
+              <!-- img and text wrapper -->
+              <div class="flex flex-col justify-center items-center">
+                <img class="h-20" src="img/shopping_cart.svg" alt="shopping_cart">
+                <h1 class="text-2xl">This order is empty</h1>
+              </div>
+            </div>
+          </div>
+
+          <!-- content bottom Start-->
+          <div class="flex-grow flex-row font-bold">
+            <div class="bg-white h-full items-center justify-center flex flex-col">
+              <!-- Input Menu content left start-->
+              <div class="flex flex-col w-full h-full text-xs">
+                <!-- row 1 input menu -->
+                <div class="flex flex-row flex-grow items-center">
+                  <button class="flex-col content-center items-center flex-grow bg-white gap-2 h-full w-full border-2 border-gray-400" type="button">
+                  <div class="flex flex-row gap-1">
+                  <img class="w-5" src="./icon/note.svg " alt="note"><span>Customer Note</span>
+                </div>  
+                </button>
+                  <button class="flex-col flex-grow content-center items-center bg-white gap-2 h-full w-full border-t-2 border-r-2 border-b-2 border-gray-400" type="button">
+                  <div class="flex flex-row gap-1">
+                  <img class="w-5" src="./icon/refund.svg" alt="refund"><span>Refund</span>
+                </div>
+                </button>
+                  <button class="flex-col flex-grow content-center items-center bg-white gap-2 h-full w-full border-t-2 border-r-2 border-b-2 border-gray-400" type="button">
+                  <div class="flex flex-row gap-1">
+                  <img class="w-5" src="./icon/info.svg" alt="info"><span>Info</span>
+                  </div>  
+                </button>
+                </div>
+
+                <!-- row 2 input menu -->
+                <div class="flex flex-row flex-grow items-center">
+                  <button class="flex-col items-center flex-grow h-full w-full bg-white gap-2 border-l-2 border-b-2 border-r-2 border-gray-400 content-center" type="button">
+                  <div class="flex flex-row gap-1">
+                  <img class="w-5" src="./icon/barcode.svg" alt="barcode"><span>Enter Code</span>
+                  </div>
+                </button>
+                  <button class="flex-col items-center content-center flex-grow h-full w-full bg-white gap-2 border-b-2 border-r-2 border-gray-400" type="button">
+                  <div class="flex flex-row gap-1">
+                  <img class="w-5" src="./icon/reset.svg" alt="reset"><span>Reset Programs</span>
+                  </div>
+                </button>
+                  <button class="flex-col items-center flex-grow h-full w-full bg-white gap-2 border-b-2 border-r-2 border-gray-400 content-center" 
+                  type="button">
+                  <div class="flex flex-row gap-1">
+                  <img class="w-5" src="./icon/reward.svg" alt="reward"><span>Reward</span>
+                  </div>
+                </button>
+                </div>
+                <!-- row 3 input menu -->
+                <div class="flex flex-row flex-grow items-center">
+                  <button class="flex-col items-center flex-grow bg-white gap-2 h-full w-full border-l-2 border-b-2 border-r-2 border-gray-400 content-center" type="button">
+                  <div class="flex flex-row gap-1">
+                  <img class="w-5" src="./icon/eWallet.svg" alt="eWallet"><span>eWallet</span>
+                  </div>
+                </button>
+                  <button class="flex-col items-center flex-grow bg-white gap-2 h-full w-full border-b-2 border-r-2 border-gray-400 content-center"
+                  type="button">
+                  <div class="flex flex-row gap-1">
+                  <img class="w-5" src="./icon/link.svg" alt=""><span>Quotation/Order</span>
+                  </div>
+                </button>
+                </div>
+              </div>
+                <!-- Input Menu content left end-->
+
+                <!-- Container Submit and nominal numbers Start-->
+                <div class="flex flex-row w-full h-full">
+                  <!-- content Submit and Menu Lily Vingroom -->
+                  <div class="flex flex-col flex-grow text-xs flex-1">
+                    <div class="flex-row flex-grow bg-white text-center h-full w-full border-b-2 border-l-2 border-r-2 border-gray-400 content-center">
+                      <button type="button" class="h-full w-full">
+                        <div class="flex flex-row gap-1 justify-center">
+                        <img class="w-5" src="./icon/user.svg" alt="user"><span>Lily Vingroom</span>
+                        </div>
+                      </button></div>
+                    <div class="flex-row flex-grow bg-[#1E674B] text-center h-full w-full border-b-2 border-l-2 border-r-2 border-gray-400 content-center">
+                      <button type="button" class="h-full w-full">
+                        <div class="flex flex-col gap-1 items-center text-white">
+                        <img class="w-9" src="./icon/arrowPayment.svg" alt=">"><span>Payment</span>
+                        </div>
+                      </button></div>
+                  </div>
+                  <!-- Content Nominal Numbers and utility -->
+                  <div class="flex flex-1"> 
+                  <div class="grid grid-flow-row w-full h-full">
+                    <!-- row 1 nominal num and util -->
+                    <div class="grid grid-cols-4">
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button class="h-full w-full" type="button">1</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button class="h-full w-full" type="button">2</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button class="w-full h-full" type="button">3</button></div>
+                      <div class="flex-col bg-[#652f45] text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button class="w-full h-full text-white" type="button">Qty</button></div>
+                    </div>
+                    <!-- row 2 nominal num and util -->
+                    <div class="grid grid-cols-4">
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="w-full h-full">4</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="h-full w-full">5</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="h-full w-full">6</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="w-full h-full">% Disc</button></div>
+                    </div>
+                    <!-- row 3 nominal num and util -->
+                    <div class="grid grid-cols-4">
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="h-full w-full">7</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="h-full w-full">8</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="w-full h-full">9</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="w-full h-full">Price</button></div>
+                    </div>
+                    <!-- row 4 nominal num and util -->
+                    <div class="grid grid-cols-4">
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="w-full h-full">+/-</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="w-full h-full">0</button></div>
+                      <div class="flex-col bg-white text-center h-full w-full border-b-2 border-r-2 border-gray-400 content-center">
+                        <button type="button" class="w-full h-full">.</button></div>
+                      <div class="flex-col bg-white h-full w-full border-b-2 border-r-2 border-gray-400 content-center items-end">
+                        <button type="button" class="w-full h-full flex justify-center items-center">
+                          <!-- div img -->
+                          <div class="content-center justify-center">
+                          <img class="w-5" src="./icon/backspace.svg" alt="Delete">
+                          </div>
+                        </button></div>
+                    </div>  
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <!-- Content Bottom End -->
+
+        </div>
+      </div>
+      <!--LEFT Content End-->
+
+      <!--RIGHT-->
+      <div class="w-3/5 flex-col text-[#3d444e] ">
+        <!--RIGHT(NAVIGATION)-->
+        <div class="flex  items-center h-9 px-1">
+          <!--HOME TO DESK-->
+          <div class="h-9 me-auto">
+            <div class="flex items-center gap-3">
+              <a href="#"><img class="h-9" src="icon/home.png" alt=""></a>
+              <p class="">></p>
+              <div class="flex items-center gap-2">
+                <a href="#"><img class="h-7" src="icon/desk.png" alt=""></a>
+                <p>Desk</p>
+              </div>
+
+            </div>
+          </div>
+          <!--SEARCH PRODUCT-->
+          <div class="flex ">
+            <input class="border-2 rounded-lg " type="search" placeholder="          Search Product" name=""
+              id="">
+          </div>
+
+        </div>
+        <!--LIST PRODUCT-->
+        <div class="block">
+        <div class="bg-[#d9dade] h-full p-2 flex flex-col gap-2">
+          <!--LAYER 1-->
+          <div class="flex gap-2 ">
+
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/1.png" alt="">
+              <p class="font-bold">Corner Desk Left Sit</p>
+              <p class="text-[#724b68] font-bold">$ 99.75</p>
+            </button>
+
+
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/2.png" alt="">
+              <p class="font-bold" >Corner Desk Right Sit</p>
+              <p class="text-[#724b68] font-bold">$ 169.05</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/3.png" alt="">
+              <p class="font-bold">Cuztomizable Desk...</p>
+              <p class="text-[#724b68] font-bold">$ 920.46</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/5.png" alt="">
+              <p class="font-bold">Cuztomizable Desk(Custom...</p>
+              <p class="text-[#724b68] font-bold">$ 862.50</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/5.png" alt="">
+              <p class="font-bold">Cuztomizable Desk(Custom...</p>
+              <p class="text-[#724b68] font-bold">$ 862.50</p>
+            </button>
+          </div>
+          <!--LAYER 2-->
+          <div class="flex gap-2 ">
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/4.png" alt="">
+              <p class="font-bold">Cuztomizable Desk(Steel,...</p>
+              <p class="text-[#724b68] font-bold">$ 862.50</p>
+            </button>
+
+
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/5.png" alt="">
+              <p class="font-bold">Cuztomizable Desk(Custom...</p>
+              <p class="text-[#724b68] font-bold">$ 862.50</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/6.png" alt="">
+              <p class="font-bold">Desk Combination</p>
+              <p class="text-[#724b68] font-bold">$ 517.50</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/7.png" alt="">
+              <p class="font-bold">Four Person <br> Desk</p>
+              <p class="text-[#724b68] font-bold">$ 2,702.50</p>
+            </button>
+            <button class="flex-col  bg-white p-2 text-left">
+              <img class="" src="img/8.png" alt="">
+              <p class="font-bold">Large Desk</p>
+              <p class="text-[#724b68] font-bold">$ 2,068.85</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
