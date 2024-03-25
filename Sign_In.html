@@ -7,6 +7,35 @@
     <title>Sign in</title>
 </head>
 <body>
+    <header class="fixed py-2 top-0 left-0 w-full h-[80px] z-10 m-auto shadow-sm bg-gray-50">
+        <div class="container w-full relative flex justify-between items-center h-full px-4 mx-auto">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="logo" width="80" height="50" loading="lazy"
+              class="h-auto max-w-[120px] w-full" />
+          </a>
+          <nav
+            class="absolute hidden bg-gray-200 md:block md:static md:top-0 md:w-max md:mt-0 left-0 w-full md:bg-transparent md:z-auto top-[90%] transition-all ease-in duration-500"
+            data-navbar>
+            <ul class="h-full px-8 flex flex-col md:flex-row md:px-0 md:items-center md:w-auto">
+              <li class="my-5 md:my-0">
+                <a href="index.html" class="font-semibold after:">Home</a>
+              </li>
+              <li class="my-5 md:mx-5">
+                <a href="FAQ.html" class="font-semibold">FAQ</a>
+              </li>
+              <li class="pt-10 pb-6 border-t-[1px] md:pb-0 md:pt-0 md:border-t-0 solid border-gray-700 w-[100px]">
+                <a class="px-5 bg-white py-3 rounded-xl font-semibold shadow-xl" href="">Sign
+                  In</a>
+              </li>
+            </ul>
+          </nav>
+    
+          <button class="grid place-items-center h-10 w-10 bg-gray-200 shadow-xl rounded-lg hover:bg-gray-100 md:hidden">
+            <ion-icon name="menu" onclick="handleToggler(this)" class="text-xl"></ion-icon>
+          </button>
+        </div>
+      </header>
+
     <section class="bg-gray-50 min-h-screen flex items-center justify-center">
         <!-- login container -->
         <div class="bg-white flex rounded-2xl shadow-lg max-w-3xl p-5">
@@ -14,6 +43,7 @@
             <div class="sm:w-auto px-2">
                 <h2 class="font-bold text-2xl text-center mt-8">Login </h2>
                 <p class="text-sm mt-4 bg-blue-200 rounded-xl px-4 py-6 text-center">Akses dan kelola instance dari akun Odoo ini.</p>
+
                 <form action="" class="flex flex-col">
                     <p class="mt-8">Email</p>
                     <input class="p-2 rounded-xl border" type="text" name="email" placeholder="email">
