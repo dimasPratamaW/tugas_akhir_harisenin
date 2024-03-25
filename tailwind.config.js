@@ -3,11 +3,10 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
-      primary:["Caveat"],
-      body:["inter"],
+      primary: ["Caveat"],
+      body: ["Inter"],
     },
     extend: {},
   },
   plugins: [],
 };
-
